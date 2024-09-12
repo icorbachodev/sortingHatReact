@@ -4,15 +4,21 @@ import { ScoreContext } from './ScoreContext';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+const houseMap = {
+    g: 'Gryffindor',
+    r: 'Ravenclaw',
+    h: 'Hufflepuff',
+    s: 'Slytherin'
+};
+
 const Question = ({ question, nextQuestion }) => {
     const { addScore } = useContext(ScoreContext);
 
     const handleAnswer = (answer) => {
-        console.log('Answer selected:', answer);
-        const scoresArray = Object.values(answer.scores)
-        // Sumar puntos a las casas correspondientes
-        scoresArray.forEach(score => {
-            addScore(score.house, score.points);
+        const { scores } = answer;
+        // Iterar sobre las casas y sumar los puntos correspondientes
+        Object.keys(scores).forEach(key => {
+            addScore(houseMap[key], scores[key]);
         });
 
         // Avanzar a la siguiente pregunta

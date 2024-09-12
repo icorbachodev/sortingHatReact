@@ -10,7 +10,6 @@ const Chat = () => {
     const [isComplete, setIsComplete] = useState(false);
 
     const nextQuestion = () => {
-        console.log('Current Question Index:', currentQuestion);
         if (currentQuestion < questions.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {

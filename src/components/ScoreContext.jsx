@@ -4,10 +4,10 @@ const ScoreContext = createContext();
 
 const ScoreProvider = ({ children }) => {
     const [scores, setScores] = useState({
-        g: 0,
-        r: 0,
-        h: 0,
-        s: 0,
+        Gryffindor: 0,
+        Hufflepuff: 0,
+        Ravenclaw: 0,
+        Slytherin: 0,
     });
 
     const addScore = (house, points) => {
