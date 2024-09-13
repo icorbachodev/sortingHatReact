@@ -6,8 +6,6 @@ It consists on the questions asked by the Sorting Hat from Harry Potter to Hogwa
 
 With the questions they gave me I've coded a chat simulating it was the Sorting Hat evaluating you. All answers have house points that are added together. At the end, the final score decides which house you belong to.
 
-This project was bootstrapped with [Vite](https://vitejs.dev/).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -36,10 +34,6 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Learn More
-
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
-
-To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](https://vitest.dev/guide/)
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
