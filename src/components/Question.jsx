@@ -28,7 +28,7 @@ const Question = ({ question, nextQuestion }) => {
     return (
         <QuestionContainer>
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                <h2>{question.title}</h2>
+                <Title>{question.title}</Title>
                 {question.answers.map((answer, index) => (
                     <Button key={index} onClick={() => handleAnswer(answer)}>
                         {answer.title}
@@ -45,17 +45,30 @@ const QuestionContainer = styled.div`
     margin: 20px 0;
 `;
 
+const Title = styled.h2`
+    color: white;
+`
+
 const Button = styled.button`
-    display: block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    font-size: 16px;
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
     cursor: pointer;
-    background-color: #ddd;
-    border: none;
-    border-radius: 5px;
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
 
     &:hover {
-        background-color: #ccc;
+        background-color: #fff;
     }
 `;

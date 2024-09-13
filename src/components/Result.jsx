@@ -22,4 +22,5 @@ export default Result;
 const ResultContainer = styled.div`
     text-align: center;
     margin-top: 20px;
+    color: white;
 `;

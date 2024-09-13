@@ -34,6 +34,8 @@ const Chat = () => {
 export default Chat;
 
 const ChatContainer = styled(motion.div)`
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
